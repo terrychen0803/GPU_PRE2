@@ -1,18 +1,9 @@
-# I2 task -> I3 operators -> S4 subgraph -> I4 -> I5
+# I2 → I3 → S4 → I4 → I5 coverage
 
-Status: conceptual mapping, not measured exact/union/event coverage.
+The measured source mapping is in `results/coverage/TASK_COVERAGE.csv`, with a summary JSON beside it. It uses RTX4090 repeat2, measured iteration 7, and independently replays each workload's saved exact R/P alignment before transferring R event indices onto P.
 
-| Real task | I3 S1–S3 | S4 approximate graph | Known missing families or gaps |
-|---|---|---|---|
-| ResNet-50 | Conv/BN/ReLU/Add/Pool/Linear | CBR, Residual | Actual bottleneck shape and projection |
-| MobileNetV3-Large | DW, pointwise, BN, Add | Depthwise-Pointwise, SE | Hardswish/Hardsigmoid/Mul training coverage |
-| U-Net | Conv, ReLU, Resize, Concat, Pool | Resize-Concat-Conv | Real decoder shape and Memset |
-| YOLO26n | Conv, Resize, Concat | Resize-Concat-Conv | SiLU, real neck/head, top-k/copy |
-| Swin-T | BMM/GEMM/Linear | Generic eager attention | LayerNorm/GELU/window shift, fused backend |
-| Qwen3 prefill/decode | BMM/GEMM | Generic eager attention | RMSNorm/RoPE/gating/KV update and real backend |
+There are 7,200 rows: 7,198 recorded operations plus two unassigned Qwen copy events. Full event-index lists, workload/operator IDs, ATen names, input shapes, matching measured isolated/context configurations, I4 limitations and target GI join IDs are retained. This table is evaluator-only and never predictor input.
 
-Important historical audit: S4 D positions exactly matching S1–S3 controlled signatures = 0 of 28. This is unseen Signature PLUS new Context, not a pure Context effect.
+I2 reference records lack full bound semantic arguments. Matches are explicitly `shape_only`, not complete runtime-signature exact matches. Geometry/length/class checks cannot establish correct blind recognition or time prediction. Zero recorded work, missing classes, non-kernel geometry, noncontiguous ownership and over-L8 cases retain their reasons and denominators.
 
-Future task coverage schema: workload_id, model_hash, forward_scope, operator_overload, runtime_signature, source_event_range, reference_quality, isolated_match, graph_match, i4_support, missing_reason, source_P_id, target_GI_id.
-
-Do not publish per-task numeric coverage percentages until original I2 R/P/recorded-work material is independently audited. Kernel fusion/copy and overlapping event union require explicit treatment.
+Different GPU/software stacks can expose different Swin/Qwen decompositions; cross-device operator indices are not forcibly paired. S4 scale0 remains one group; its D/I/S and repeats cannot become independent held-out samples. No task-level prediction accuracy or formal exact coverage is inferred from this migration table.

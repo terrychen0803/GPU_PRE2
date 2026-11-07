@@ -1,28 +1,19 @@
-# Migration status (2026-11-07)
+# Migration status — 2026-11-07
 
-## Scope and source
+Local E2/I2/I3/I4 integration and historical numerical replay completed. Old local stage trees were removed only after byte/hash and offline regression gates. Remote predecessor repositories and branches were not deleted.
 
-Main research objective: RTX4090 P-only trace -> RTX3090/GB10 operator CTX and single-forward GI, with the six specified inference models / seven workload groups.
+| Component | Status |
+| --- | --- |
+| E2 | Three historical profiles/samples relocated and SHA-verified; compatibility checks retain missing UUID/software mismatch |
+| I2 | 189 cells, 7,560 measured; executable scoped workers/coordinator and shared parser ported; 126 saved traces replayed byte-exact |
+| I3 | 3,024 cells, 120,960 measured; shared isolated and A/BC context implementations; 672 repeat2 P/R traces replayed |
+| I4 frozen | Exact E1 candidate features, normalizers, 3 recognizer + 3 N0 checkpoints; all three v2 repeats and 12 evaluation outputs replay byte-exact |
+| I4 mixed | Existing experimental trainer retained; separate feature contract, no new scientific fit or data conversion claimed |
+| Coverage | 7,200 rows from actual source R/P; incomplete semantic arguments prevent exact signature claims |
+| I5 | Not implemented; GI contract only |
 
-| Component | Intended transfer | Actual status of this clean repo |
-|---|---|---|
-| E2 | Executable `e2_calibration_v3` | Source copied byte-for-byte from old fixed commit; **existing measured profiles remain off-repo** |
-| O3 / I4 | Semi-Markov and N0 | Clean I4 experimental implementation and mixed-training API; old frozen model weights and original training code **not yet imported** |
-| I2 | Seven-A scoped forward GI/P/R and R inventory | Inventory/collector extraction from old code requires compatibility regression; source identities documented |
-| I3 S1-S3 | 72 operator configurations | Catalog and capture metadata; raw/asset files still on hosts |
-| I3 S4 | Six scale0 D/I/S graphs | Context plans and metadata; raw/derived D assets still on hosts |
-| I5 | Single forward GI prediction | Contract and baseline plan only; no ITER model fitted |
+The new package has no imports of predecessor O1/O2/O4 packages or dataset path injection. Dataset IDs, stage allowlists and explicit protocols replace discovery/fallback behavior. Repeated source snapshots are inert content-addressed provenance, not runnable dependencies.
 
-**Never claim new formal reference verification from migration.** All known historical `strict_reference_verified=false` flags retain their meaning. No new GPU runs or dataset training have occurred in this repository.
+Remaining gates: live collector smoke on each device; missing 3090 isolated operand evidence and 4090 smoke delivery; strict reference qualification; non-kernel feature treatment and missing taxonomy; independent context validation; scientific I4 mixed fits and I5. The 3090 no-cuDNN and 4090 conditional Groups4 captures remain distinct variants; their data replay does not qualify new GPU collection.
 
-## Data migration prerequisite
-
-Before claiming end-to-end reproduction, locate and hash each device's raw capture archive, weights/inputs, calibration profile, I4 checkpoint and train/test split manifest. Store only SHA256/index metadata in Git; stage raw data on controlled external storage. Block unsupported/missing records rather than fabricate P/R/GI or download substitute assets.
-
-## Mandatory gates
-
-1. Unit tests for source-only predictor and grouped train/validation separation.
-2. Byte-stable E2 run source provenance and calibration compatibility check.
-3. I2/I3 capture replay comparison on a fixed subset with original source commit, data schema and R ownership.
-4. I4 isolated baseline replay and new context-mixed training against independent graph groups; do not use S4 scale0 repeats as separate held-out groups.
-5. I5 only after I4 coverage/OOF and matched single-forward GI labels are available.
+See LOCAL_DATA_LAYOUT.md and MIGRATION_REPORT_ZH_TW.md. The full external hash index and raw/checkpoint assets remain outside Git; their pointers and SHA are tracked under data/manifests.

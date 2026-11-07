@@ -1,15 +1,9 @@
-# I2: seven-A forward adapter and worker port
+# I2 port status
 
-- The original seven workload specifications, model-specific frozen asset adapter and \`formal_worker\` timing scope were **extracted** from old \`o4_pilot/o4_research/\` at source commit \`b28144163e1ff08fc22913f5f05e75bdb561eea0\`.
-- The minimal \`precision_policy\`, R dispatch instrumentation and own-CUDA-context-reset utilities are included once in \`gpu_pre2.i2.runtime\` instead of importing complete \`vendor/legacy\` O1/O2 trees.
-- \`gpu_pre2.i2.formal_protocol.PROTOCOL\` retains GI/P/R, 40 measured iterations × 3 fresh processes. Existing timing and protocol are engineering-only.
-- \`gpu_pre2.i2.prepare_assets\` requires existing checkpoint/weights files. It does **not** download or invent model assets.
-- \`gpu_pre2.i2.formal_worker\` is a port of one worker process. It is **NOT** a full validated replacement for the old \`run_formal\` orchestrator + Nsight parser + acceptance gate. External \`nsys profile\`, audit/QA, immutable run scheduling and three-node replay still need to be migrated and verified before any new GPU collection.
-- The exact historical I2 raw traces and frozen assets are not present in Git; their manifest/SHA and per-model compatibility must be checked separately.
+Seven scoped A adapters, fixed-asset validation, GI/P/R worker and formal coordinator are in `gpu_pre2.i2`. Shared SQLite parser/quality/alignment lives in `gpu_pre2.profiling`; no old O1/O2/O4 import is required.
 
-## Minimum migration validation
+All three devices' seven A groups are registered: 189 cells, 7,560 measured, 126 P/R captures. All 126 captures and 6,990 parser outputs replay byte-exact. GI remains a single no-profiler scoped forward, with 40 measurements × 3 fresh processes.
 
-1. \`python -m unittest discover -s tests -v\` on a Python environment with torch.
-2. Check that each adapter loads the exact frozen A assets, native model route/precision, outputs and code hashes.
-3. In a new experimental session (not historical outputs), run one plan/smoke GI→P→R on each device using a validated orchestrator.
-4. Compare semantic scope, R dispatch, GPU event timing and quality against the fixed original collector. Do not mark port compatible before this.
+New collection protocol IDs carry `gpu_pre2:` to distinguish the port. Code release hashes are frozen before collection, and assets must match the explicitly supplied manifest. No new GPU smoke was run; historical replay is not proof of live collector numerical equivalence. Reference warnings, unassigned Qwen copy events, stack differences and stability reviews remain.
+
+Run `./run.sh -m gpu_pre2.i2.run_formal --help`; local assets/data/replay commands are documented in LOCAL_DATA_LAYOUT.md.

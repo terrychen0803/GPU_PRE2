@@ -17,3 +17,6 @@ data/private/
 outputs/
 checkpoints/
 .DS_Store
+local-runtime.json
+build/
+*.egg-info/

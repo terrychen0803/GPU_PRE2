@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "python_files": 57,
+    "forbidden_dependencies": []
+  },
+  "GPU_runs": 0,
+  "strict_reference_verified": false,
+  "I2": {
+    "cells": 189,
+    "measured_iterations": 7560
+  },
+  "I3": {
+    "cells": 3024,
+    "measured_iterations": 120960
+  },
+  "I4": [
+    {
+      "repeat": 1,
+      "sha256": "1585f7b7c3771948a80d5b53157ca7067a12dcab0a773f3b7149d2f7e44d3c2e",
+      "byte_exact": true
+    },
+    {
+      "repeat": 2,
+      "sha256": "5203b5c1b5094a28b33b034b735e36af66af952eb135f43caeb0d15c42e69d3e",
+      "byte_exact": true
+    },
+    {
+      "repeat": 3,
+      "sha256": "19a0f80220d1a055c37da29050d9f91f771788551a6f3fbd4e57d0f05f67e18e",
+      "byte_exact": true
+    },
+    {
+      "repeat": 2,
+      "sha256": "5203b5c1b5094a28b33b034b735e36af66af952eb135f43caeb0d15c42e69d3e",
+      "byte_exact": true,
+      "target_reference_poison_invariant": true
+    }
+  ],
+  "status": "PASS_OFFLINE_MIGRATION_ONLY"
+}

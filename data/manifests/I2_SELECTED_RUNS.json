@@ -1,0 +1,149 @@
+[
+  {
+    "device": "RTX3090",
+    "workload": "RN-A",
+    "root": "captures/i2/RTX3090/RN-A",
+    "selection": "producer primary index; latest complete, including UN review",
+    "source_commit_reported": "71cb6fa83fb9be22013a711130cab7b9363cd97d"
+  },
+  {
+    "device": "RTX3090",
+    "workload": "UN-A",
+    "root": "captures/i2/RTX3090/UN-A",
+    "selection": "producer primary index; latest complete, including UN review",
+    "source_commit_reported": "71cb6fa83fb9be22013a711130cab7b9363cd97d"
+  },
+  {
+    "device": "RTX3090",
+    "workload": "MV-A",
+    "root": "captures/i2/RTX3090/MV-A",
+    "selection": "producer primary index; latest complete, including UN review",
+    "source_commit_reported": "71cb6fa83fb9be22013a711130cab7b9363cd97d"
+  },
+  {
+    "device": "RTX3090",
+    "workload": "YO-A",
+    "root": "captures/i2/RTX3090/YO-A",
+    "selection": "producer primary index; latest complete, including UN review",
+    "source_commit_reported": "71cb6fa83fb9be22013a711130cab7b9363cd97d"
+  },
+  {
+    "device": "RTX3090",
+    "workload": "QD-A",
+    "root": "captures/i2/RTX3090/QD-A",
+    "selection": "producer primary index; latest complete, including UN review",
+    "source_commit_reported": "71cb6fa83fb9be22013a711130cab7b9363cd97d"
+  },
+  {
+    "device": "RTX3090",
+    "workload": "QP-A",
+    "root": "captures/i2/RTX3090/QP-A",
+    "selection": "producer primary index; latest complete, including UN review",
+    "source_commit_reported": "71cb6fa83fb9be22013a711130cab7b9363cd97d"
+  },
+  {
+    "device": "RTX3090",
+    "workload": "SW-A",
+    "root": "captures/i2/RTX3090/SW-A",
+    "selection": "producer primary index; latest complete, including UN review",
+    "source_commit_reported": "71cb6fa83fb9be22013a711130cab7b9363cd97d"
+  },
+  {
+    "device": "RTX4090",
+    "workload": "RN-A",
+    "root": "captures/i2/RTX4090/RN-A",
+    "selection": "producer COLLECTION_INDEX.json",
+    "source_commit_reported": "c988163a0acf186874ea64e4957284b87f999d43"
+  },
+  {
+    "device": "RTX4090",
+    "workload": "MV-A",
+    "root": "captures/i2/RTX4090/MV-A",
+    "selection": "producer COLLECTION_INDEX.json",
+    "source_commit_reported": "c988163a0acf186874ea64e4957284b87f999d43"
+  },
+  {
+    "device": "RTX4090",
+    "workload": "UN-A",
+    "root": "captures/i2/RTX4090/UN-A",
+    "selection": "producer COLLECTION_INDEX.json",
+    "source_commit_reported": "c988163a0acf186874ea64e4957284b87f999d43"
+  },
+  {
+    "device": "RTX4090",
+    "workload": "YO-A",
+    "root": "captures/i2/RTX4090/YO-A",
+    "selection": "producer COLLECTION_INDEX.json",
+    "source_commit_reported": "c988163a0acf186874ea64e4957284b87f999d43"
+  },
+  {
+    "device": "RTX4090",
+    "workload": "QD-A",
+    "root": "captures/i2/RTX4090/QD-A",
+    "selection": "producer COLLECTION_INDEX.json",
+    "source_commit_reported": "c988163a0acf186874ea64e4957284b87f999d43"
+  },
+  {
+    "device": "RTX4090",
+    "workload": "QP-A",
+    "root": "captures/i2/RTX4090/QP-A",
+    "selection": "producer COLLECTION_INDEX.json",
+    "source_commit_reported": "c988163a0acf186874ea64e4957284b87f999d43"
+  },
+  {
+    "device": "RTX4090",
+    "workload": "SW-A",
+    "root": "captures/i2/RTX4090/SW-A",
+    "selection": "producer COLLECTION_INDEX.json",
+    "source_commit_reported": "c988163a0acf186874ea64e4957284b87f999d43"
+  },
+  {
+    "device": "GB10",
+    "workload": "MV-A",
+    "root": "captures/i2/GB10/MV-A",
+    "selection": "same-stage original GB10 seven-A run",
+    "source_commit_reported": "e5edf96c27d8c6be595e8eb959b65c97063c2b59"
+  },
+  {
+    "device": "GB10",
+    "workload": "QD-A",
+    "root": "captures/i2/GB10/QD-A",
+    "selection": "same-stage original GB10 seven-A run",
+    "source_commit_reported": "e5edf96c27d8c6be595e8eb959b65c97063c2b59"
+  },
+  {
+    "device": "GB10",
+    "workload": "QP-A",
+    "root": "captures/i2/GB10/QP-A",
+    "selection": "same-stage original GB10 seven-A run",
+    "source_commit_reported": "e5edf96c27d8c6be595e8eb959b65c97063c2b59"
+  },
+  {
+    "device": "GB10",
+    "workload": "RN-A",
+    "root": "captures/i2/GB10/RN-A",
+    "selection": "same-stage original GB10 seven-A run",
+    "source_commit_reported": "e5edf96c27d8c6be595e8eb959b65c97063c2b59"
+  },
+  {
+    "device": "GB10",
+    "workload": "SW-A",
+    "root": "captures/i2/GB10/SW-A",
+    "selection": "same-stage original GB10 seven-A run",
+    "source_commit_reported": "e5edf96c27d8c6be595e8eb959b65c97063c2b59"
+  },
+  {
+    "device": "GB10",
+    "workload": "UN-A",
+    "root": "captures/i2/GB10/UN-A",
+    "selection": "same-stage original GB10 seven-A run",
+    "source_commit_reported": "e5edf96c27d8c6be595e8eb959b65c97063c2b59"
+  },
+  {
+    "device": "GB10",
+    "workload": "YO-A",
+    "root": "captures/i2/GB10/YO-A",
+    "selection": "same-stage original GB10 seven-A run",
+    "source_commit_reported": "e5edf96c27d8c6be595e8eb959b65c97063c2b59"
+  }
+]

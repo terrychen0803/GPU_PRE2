@@ -1,0 +1,394 @@
+{
+  "schema": "gpu_pre2_retained_datasets_v1",
+  "discovery": "explicit_ids_only",
+  "datasets": [
+    {
+      "id": "E2_GB10",
+      "stage": "E2",
+      "path": "calibration/GB10",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 19,
+      "bytes_before_source_dedup": 3498172,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "E2_RTX3090",
+      "stage": "E2",
+      "path": "calibration/RTX3090",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 21,
+      "bytes_before_source_dedup": 3280906,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "E2_RTX4090",
+      "stage": "E2",
+      "path": "calibration/RTX4090",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 21,
+      "bytes_before_source_dedup": 3242849,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "e2_gb10_full_20261020",
+      "stage": "E2",
+      "path": "calibration/GB10/historical_runs/e2_gb10_full_20261020",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 14,
+      "bytes_before_source_dedup": 2653953,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "e2_gb10_full_v2_20261020",
+      "stage": "E2",
+      "path": "calibration/GB10/historical_runs/e2_gb10_full_v2_20261020",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 14,
+      "bytes_before_source_dedup": 2607284,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "e2_gb10_full_v3_20261020",
+      "stage": "E2",
+      "path": "calibration/GB10",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 0,
+      "bytes_before_source_dedup": 0,
+      "strict_reference_verified": false,
+      "alias_of": "E2_GB10"
+    },
+    {
+      "id": "e2_gb10_memory_write_repeat_20261020",
+      "stage": "E2",
+      "path": "calibration/GB10/historical_runs/e2_gb10_memory_write_repeat_20261020",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 6,
+      "bytes_before_source_dedup": 15000,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "e2_gb10_smoke_20261020",
+      "stage": "E2",
+      "path": "calibration/GB10/historical_runs/e2_gb10_smoke_20261020",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 5,
+      "bytes_before_source_dedup": 984485,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX3090_RN-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX3090/RN-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 160089969,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX3090_UN-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX3090/UN-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 45799425,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX3090_MV-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX3090/MV-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 461,
+      "bytes_before_source_dedup": 145155562,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX3090_YO-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX3090/YO-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 461,
+      "bytes_before_source_dedup": 375182221,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX3090_QD-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX3090/QD-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 1210601084,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX3090_QP-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX3090/QP-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 881826279,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX3090_SW-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX3090/SW-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 461,
+      "bytes_before_source_dedup": 214706764,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX4090_RN-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX4090/RN-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 461,
+      "bytes_before_source_dedup": 138303449,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX4090_MV-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX4090/MV-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 461,
+      "bytes_before_source_dedup": 123358856,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX4090_UN-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX4090/UN-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 43485974,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX4090_YO-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX4090/YO-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 461,
+      "bytes_before_source_dedup": 320871664,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX4090_QD-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX4090/QD-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 1190245283,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX4090_QP-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX4090/QP-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 886486041,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_RTX4090_SW-A",
+      "stage": "I2",
+      "path": "captures/i2/RTX4090/SW-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 461,
+      "bytes_before_source_dedup": 214243882,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_GB10_MV-A",
+      "stage": "I2",
+      "path": "captures/i2/GB10/MV-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 461,
+      "bytes_before_source_dedup": 144032929,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_GB10_QD-A",
+      "stage": "I2",
+      "path": "captures/i2/GB10/QD-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 1194357431,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_GB10_QP-A",
+      "stage": "I2",
+      "path": "captures/i2/GB10/QP-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 857724754,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_GB10_RN-A",
+      "stage": "I2",
+      "path": "captures/i2/GB10/RN-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 461,
+      "bytes_before_source_dedup": 160499052,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_GB10_SW-A",
+      "stage": "I2",
+      "path": "captures/i2/GB10/SW-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 461,
+      "bytes_before_source_dedup": 213681545,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_GB10_UN-A",
+      "stage": "I2",
+      "path": "captures/i2/GB10/UN-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 46194803,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_GB10_YO-A",
+      "stage": "I2",
+      "path": "captures/i2/GB10/YO-A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 455,
+      "bytes_before_source_dedup": 371173393,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_GB10_S1",
+      "stage": "I3",
+      "path": "captures/i3/GB10/S1",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 3546,
+      "bytes_before_source_dedup": 33969523,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_GB10_S2",
+      "stage": "I3",
+      "path": "captures/i3/GB10/S2",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 31343,
+      "bytes_before_source_dedup": 319989259,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_GB10_S3",
+      "stage": "I3",
+      "path": "captures/i3/GB10/S3",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 34521,
+      "bytes_before_source_dedup": 351781034,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_GB10_S4_A",
+      "stage": "I3",
+      "path": "captures/i3/GB10/S4_A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 16538,
+      "bytes_before_source_dedup": 218549138,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_GB10_S4_BC",
+      "stage": "I3",
+      "path": "captures/i3/GB10/S4_BC",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 26408,
+      "bytes_before_source_dedup": 288165051,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_RTX3090_S1S2",
+      "stage": "I3",
+      "path": "captures/i3/RTX3090/S1S2",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 21647,
+      "bytes_before_source_dedup": 214739173,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_RTX3090_S3",
+      "stage": "I3",
+      "path": "captures/i3/RTX3090/S3",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 21971,
+      "bytes_before_source_dedup": 227189633,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_RTX3090_S4",
+      "stage": "I3",
+      "path": "captures/i3/RTX3090/S4",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 25615,
+      "bytes_before_source_dedup": 312557939,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_RTX4090_S1S2",
+      "stage": "I3",
+      "path": "captures/i3/RTX4090/S1S2",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 17605,
+      "bytes_before_source_dedup": 164345431,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_RTX4090_S3",
+      "stage": "I3",
+      "path": "captures/i3/RTX4090/S3",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 17550,
+      "bytes_before_source_dedup": 165162373,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_RTX4090_S4",
+      "stage": "I3",
+      "path": "captures/i3/RTX4090/S4",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 19568,
+      "bytes_before_source_dedup": 229720047,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I2_frozen_assets",
+      "stage": "I2",
+      "path": "assets/i2_frozen_A",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 14,
+      "bytes_before_source_dedup": 1781266324,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I4_P0_P2",
+      "stage": "I4",
+      "path": "checkpoints/i4_p0_p2",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 147,
+      "bytes_before_source_dedup": 25084195,
+      "strict_reference_verified": false
+    },
+    {
+      "id": "I3_RTX4090_delivered_assets",
+      "stage": "I3",
+      "path": "assets/i3_rtx4090_delivery",
+      "status": "sha256_verified",
+      "files_before_source_dedup": 711,
+      "bytes_before_source_dedup": 41014110,
+      "strict_reference_verified": false
+    }
+  ]
+}

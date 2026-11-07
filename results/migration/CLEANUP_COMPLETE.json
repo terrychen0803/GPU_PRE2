@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "workspace_bytes_before": 144043937792,
+  "workspace_bytes_after": 14157803520,
+  "workspace_allocated_bytes_reduced": 129886134272,
+  "filesystem_free_bytes_delta": 129886101504,
+  "deleted_roots": [
+    "gpu-prediction-o1-challenge",
+    "gpu-prediction-o1-full",
+    "gpu-prediction-o2-gb10",
+    "gpu-prediction-o2-publish",
+    "gpu-prediction",
+    "O3",
+    "O4",
+    "artifacts",
+    "inputs",
+    "received",
+    "archives",
+    "RTX3090_archives",
+    "RTX4090_archives"
+  ],
+  "remote_repo_or_branches_deleted": false,
+  "protected_workspace_paths_touched": false,
+  "utc": "2026-11-07T14:27:09.345407+00:00"
+}

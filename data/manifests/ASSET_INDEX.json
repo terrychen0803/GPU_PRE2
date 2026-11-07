@@ -1,0 +1,13 @@
+{
+  "schema": "gpu_pre2_external_hash_index_v1",
+  "path": "provenance/ASSET_INDEX.jsonl",
+  "sha256": "f378988cca2fb70f4ee367e437f48c6006715157643a39ddb30117364c2708ee",
+  "files": 225641,
+  "bytes": 13298337770,
+  "initial_asset_references_rechecked": 246899,
+  "compacted_source_references_verified": 21685,
+  "symlinks": 12,
+  "all_original_retained_bytes_verified": true,
+  "model_files_verified": 31,
+  "utc": "2026-11-07T14:25:44.021768+00:00"
+}
