@@ -27,3 +27,9 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: I3 catalog
         run: python scripts/audit_i3_catalog.py
+      - name: End-to-end synthetic mixed training smoke
+        run: |
+          python scripts/train_i4.py --train examples/i4/train.synthetic.jsonl --validation examples/i4/validation.synthetic.jsonl --mode pretrain_mixed --pretrain-updates 2 --second-updates 2 --log-every 1 --out /tmp/gpu_pre2_synthetic_i4
+          test -f /tmp/gpu_pre2_synthetic_i4/recognizer.pt
+          test -f /tmp/gpu_pre2_synthetic_i4/normalizer.json
+          test -f /tmp/gpu_pre2_synthetic_i4/report.json
