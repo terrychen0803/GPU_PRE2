@@ -1,0 +1,10 @@
+node,stage,work_items,formal_cells,formal_measured,mode_groups,stable_mode_groups,review_mode_groups,GI_stable,P_CTX_positions,P_CTX_stable,exact_PR_pairs,traces,NVTX_warning_traces,unmatched_work_APIs,clock_start_before_API,clock_end_before_API,overlap_pairs,same_stream_overlap_pairs,multistream_traces,engineering_blocker_traces,R_rows,R_mismatches,ownership_issue_rows,strict_reference_verified,formal_training_eligible
+GB10,S1S2,36,324,12960,108,87,21,24,36,28,108,216,216,810,3652,149,204,204,0,0,4860,0,0,False,False
+GB10,S3,36,324,12960,108,94,14,26,36,32,108,216,216,540,4628,311,179,179,0,0,4860,0,0,False,False
+GB10,S4,40,360,14400,120,105,15,31,84,69,120,240,240,0,14149,66,0,0,0,0,11340,0,0,False,False
+RTX3090,S1S2,36,324,12960,108,52,56,20,36,33,108,216,216,270,0,0,0,0,0,0,4860,0,0,False,False
+RTX3090,S3,36,324,12960,108,47,61,25,36,35,108,216,216,270,0,0,0,0,0,0,4860,0,0,False,False
+RTX3090,S4,40,360,14400,120,49,71,28,84,64,120,240,240,0,0,0,0,0,0,0,11340,0,0,False,False
+RTX4090,S1S2,36,324,12960,108,93,15,34,36,36,108,216,216,810,0,0,0,0,0,0,4860,0,0,False,False
+RTX4090,S3,36,324,12960,108,86,22,28,36,36,108,216,216,540,0,0,1005,0,6,0,4860,0,0,False,False
+RTX4090,S4,40,360,14400,120,91,29,34,84,82,120,240,240,810,0,0,0,0,0,0,11340,0,0,False,False

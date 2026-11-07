@@ -8,7 +8,7 @@ Experimental single shared Semi-Markov recognizer using **only RTX4090 numerical
 3. Four comparable configurations: \`isolated_only\`, \`context_only\`, \`pretrain_context\`, \`pretrain_mixed\`. Same architecture, model initialization/seed, validation groups, and typed-boundary metrics.
 4. N0 ratio-residual 43→64→32→1 is available separately; operator predictor consumes source P-only features and independent target E2 hardware descriptor, not target test trace or reference labels.
 
-**Do not confuse this new implementation with the frozen historical I4 P0–P2 model.** Its 29→64→32→11 architecture is mirrored, but the precise E1 27-dimensional segment feature aggregator and normalizer from historical \`data/predictor_input_v2\` have not yet been extracted. The new candidate scorer currently uses **mean-pooled** event features. Consequently historical checkpoints MUST NOT be loaded as if compatible, and no score in the historical report has been reproduced in GPU_PRE2.
+**Do not confuse this new implementation with the frozen historical I4 P0–P2 model.** Its 29→64→32→11 architecture is mirrored, but the precise E1 27-dimensional segment feature aggregator and normalizer from historical \`data/predictor_input_v2\` are now available in `gpu_pre2.models.historical` with their original frozen checkpoints outside Git. The new candidate scorer currently uses **mean-pooled** event features. Consequently historical checkpoints MUST NOT be loaded as if compatible, and the historical module has independently reproduced the three v2 repeats and evaluation outputs; the mean-pooled mixed trainer remains a separate experiment.
 
 ## Data contract
 
@@ -43,3 +43,7 @@ The CLI **does not** derive R labels, fetch Nsight traces, construct real model 
 - Five-event Conv including 17,280-byte Memset is unsupported in old E1 geometry; update event features with explicit event type/missingness mask before claiming entire-graph coverage.
 - Report blind typed F1 and boundary F1 on independent context groups, isolated F1, coverage and CTX accuracy separately.
 - Maintain frozen historical isolated-only model as baseline; never pretend this new code was the exact original O3 checkpoint.
+
+## Local historical replay
+
+See LOCAL_DATA_LAYOUT.md. Use `gpu_pre2.models.historical.predict` for the frozen E1 candidate-segment baseline. Its checkpoint/normalizer/data contract is distinct from this trainer's per-event mean-pooling contract. Migration did not fit a new scientific mixed model or construct a validated real-data converter for it.

@@ -1,0 +1,54 @@
+{
+  "files": 12,
+  "all_byte_exact": true,
+  "checks": [
+    {
+      "file": "TIME_STRATA.csv",
+      "byte_exact": true
+    },
+    {
+      "file": "S4_WORK_SUMS.csv",
+      "byte_exact": true
+    },
+    {
+      "file": "TIME_ROWS.csv",
+      "byte_exact": true
+    },
+    {
+      "file": "D_I_S_CTX_SUMS.csv",
+      "byte_exact": true
+    },
+    {
+      "file": "TIME_METRICS.csv",
+      "byte_exact": true
+    },
+    {
+      "file": "SEQUENCE_COVERAGE.csv",
+      "byte_exact": true
+    },
+    {
+      "file": "PAIRED_GROUP_BOOTSTRAP.csv",
+      "byte_exact": true
+    },
+    {
+      "file": "EVALUATION_COMPLETE.json",
+      "byte_exact": true
+    },
+    {
+      "file": "CONFUSION_ROW_NORMALIZED.csv",
+      "byte_exact": true
+    },
+    {
+      "file": "CLASSIFICATION_METRICS.csv",
+      "byte_exact": true
+    },
+    {
+      "file": "CLASSIFICATION_ROWS.csv",
+      "byte_exact": true
+    },
+    {
+      "file": "PER_CLASS.csv",
+      "byte_exact": true
+    }
+  ]
+}

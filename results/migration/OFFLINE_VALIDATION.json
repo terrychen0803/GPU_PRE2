@@ -1,0 +1,503 @@
+{
+  "dependencies": {
+    "python_files": 56,
+    "forbidden_dependencies": []
+  },
+  "GPU_runs": 0,
+  "strict_reference_verified": false,
+  "I2": {
+    "cells": 189,
+    "measured_iterations": 7560
+  },
+  "I3": {
+    "cells": 3024,
+    "measured_iterations": 120960
+  },
+  "I4": [
+    {
+      "repeat": 1,
+      "sha256": "1585f7b7c3771948a80d5b53157ca7067a12dcab0a773f3b7149d2f7e44d3c2e",
+      "byte_exact": true
+    },
+    {
+      "repeat": 2,
+      "sha256": "5203b5c1b5094a28b33b034b735e36af66af952eb135f43caeb0d15c42e69d3e",
+      "byte_exact": true
+    },
+    {
+      "repeat": 3,
+      "sha256": "19a0f80220d1a055c37da29050d9f91f771788551a6f3fbd4e57d0f05f67e18e",
+      "byte_exact": true
+    },
+    {
+      "repeat": 2,
+      "sha256": "5203b5c1b5094a28b33b034b735e36af66af952eb135f43caeb0d15c42e69d3e",
+      "byte_exact": true,
+      "target_reference_poison_invariant": true
+    }
+  ],
+  "I2_parser": {
+    "captures": 126,
+    "artifacts": 6990,
+    "byte_exact_artifacts": 6990,
+    "versioned_stream_corrections": []
+  },
+  "I3_parser": {
+    "captures": 672,
+    "artifacts": 36992,
+    "byte_exact_artifacts": 36902,
+    "versioned_stream_corrections": [
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000000.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000001.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000002.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000003.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000004.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000005.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000006.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000007.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000008.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000009.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000010.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000011.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000012.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000013.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000014.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000015.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000016.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000017.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000018.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000019.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000020.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000021.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000022.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000023.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000024.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000025.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000026.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000027.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000028.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000029.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000030.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000031.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000032.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000033.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000034.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000035.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000036.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000037.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000038.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/measure_000039.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/transition_000000.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/transition_000001.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/transition_000002.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/transition_000003.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_P",
+        "artifact": "predictor/transition_000004.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000000.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000001.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000002.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000003.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000004.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000005.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000006.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000007.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000008.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000009.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000010.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000011.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000012.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000013.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000014.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000015.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000016.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000017.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000018.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000019.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000020.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000021.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000022.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000023.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000024.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000025.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000026.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000027.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000028.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000029.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000030.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000031.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000032.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000033.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000034.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000035.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000036.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000037.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000038.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/measure_000039.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/transition_000000.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/transition_000001.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/transition_000002.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/transition_000003.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      },
+      {
+        "cell": "captures/i3/RTX4090/S3/collections/groups4_multistream_v2_formal/I3_conv_00_groups4_r2_R",
+        "artifact": "predictor/transition_000004.jsonl",
+        "reason": "corrected_four_stream_aliases_preserve_all_other_fields"
+      }
+    ]
+  },
+  "status": "PASS_OFFLINE_MIGRATION_ONLY"
+}

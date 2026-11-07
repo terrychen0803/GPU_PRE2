@@ -1,0 +1,20 @@
+{
+  "rows": 7200,
+  "source": "RTX4090",
+  "repeat": 2,
+  "measured_iteration": 7,
+  "by_workload": {
+    "MV-A": 187,
+    "QD-A": 2689,
+    "QP-A": 2829,
+    "RN-A": 175,
+    "SW-A": 806,
+    "UN-A": 49,
+    "YO-A": 465
+  },
+  "mapping_level": "ATen name + input shapes; no complete semantic exact match claim",
+  "unassigned_events": 2,
+  "model_evaluation_performed": false,
+  "strict_reference_verified": false,
+  "taxonomy_sha256": "2207bf8a67d3cab3eed4a5a3a8f2f59bfa604b0d2882349965c49a31489ffee9"
+}

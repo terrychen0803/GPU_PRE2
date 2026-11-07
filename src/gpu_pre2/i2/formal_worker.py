@@ -42,7 +42,6 @@ def run(req_path):
     try:
         import torch
         import torchvision
-        from gpu_pre2.i2 import runtime as legacy_bootstrap
         from gpu_pre2.i2.runtime import precision_policy
 
         torch.set_num_threads(1)

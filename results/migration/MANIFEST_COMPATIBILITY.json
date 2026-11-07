@@ -1,0 +1,79 @@
+{
+  "i2_fixed_files": 11,
+  "isolated_manifests": [
+    {
+      "manifest_sha256": "7ab9ade8f3ec5bbccb44a4563f104711105e8f2dd1716899e14e5d49364c17f5",
+      "configurations": 3,
+      "operand_files": 8
+    },
+    {
+      "manifest_sha256": "04d99eceaebf84162a7276d95ca8177db9e7e03e40b9742f5ea8c79b3da28e9d",
+      "configurations": 33,
+      "operand_files": 64
+    },
+    {
+      "manifest_sha256": "d4f23e62e97a21e2e0a45a019bd20339d6aea53a3d19333a5ce923e5c5f048ad",
+      "configurations": 36,
+      "operand_files": 74
+    },
+    {
+      "manifest_sha256": "7ab9ade8f3ec5bbccb44a4563f104711105e8f2dd1716899e14e5d49364c17f5",
+      "configurations": 3,
+      "operand_files": 8
+    },
+    {
+      "manifest_sha256": "04d99eceaebf84162a7276d95ca8177db9e7e03e40b9742f5ea8c79b3da28e9d",
+      "configurations": 33,
+      "operand_files": 64
+    },
+    {
+      "manifest_sha256": "d4f23e62e97a21e2e0a45a019bd20339d6aea53a3d19333a5ce923e5c5f048ad",
+      "configurations": 36,
+      "operand_files": 74
+    }
+  ],
+  "context_manifests": [
+    {
+      "configurations": 14,
+      "derived_tensor_files": 21,
+      "base_operand_files": 17,
+      "assets_manifest_sha256": "3368508f4966d7315f9fc1af53aa166a23f1587a778ebbc40276bff5a9665aef",
+      "base_manifest_sha256": "3dbff981696132cc5e70a3b76f98c1dbe6625839ed8542c78eb5db360e50472e"
+    },
+    {
+      "configurations": 26,
+      "derived_tensor_files": 40,
+      "base_operand_files": 18,
+      "assets_manifest_sha256": "ad2502286d57cdd291b7d15f96d31074b7f803f75f6a68efdfb71f2c7435237b",
+      "base_manifest_sha256": "c1abadaa2f14fae6534ac48e576ae8076db7795a6a768dbb3d99d63ce5f05fb6"
+    },
+    {
+      "configurations": 14,
+      "derived_tensor_files": 21,
+      "base_operand_files": 17,
+      "assets_manifest_sha256": "6048d5568a99caf6fbfe55de686c82e4df60a593e03ac5d57b682b9c98870236",
+      "base_manifest_sha256": "3dbff981696132cc5e70a3b76f98c1dbe6625839ed8542c78eb5db360e50472e"
+    },
+    {
+      "configurations": 26,
+      "derived_tensor_files": 40,
+      "base_operand_files": 18,
+      "assets_manifest_sha256": "3326f71e335ddc40a5b3bdc69e7d9dea81d29b6fc2111ccd0c81fd2e78952091",
+      "base_manifest_sha256": "c1abadaa2f14fae6534ac48e576ae8076db7795a6a768dbb3d99d63ce5f05fb6"
+    },
+    {
+      "configurations": 14,
+      "derived_tensor_files": 21,
+      "base_operand_files": 17,
+      "assets_manifest_sha256": "e5b35460509976a1179ac47b9775473efe7dcb54113787a272171780e41383e1",
+      "base_manifest_sha256": "3dbff981696132cc5e70a3b76f98c1dbe6625839ed8542c78eb5db360e50472e"
+    },
+    {
+      "configurations": 26,
+      "derived_tensor_files": 40,
+      "base_operand_files": 18,
+      "assets_manifest_sha256": "090a8d9643865fc939e01c117f9418bfae75e17876c468e77552c6976ce14009",
+      "base_manifest_sha256": "c1abadaa2f14fae6534ac48e576ae8076db7795a6a768dbb3d99d63ce5f05fb6"
+    }
+  ]
+}

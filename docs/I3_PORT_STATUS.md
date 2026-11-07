@@ -1,14 +1,11 @@
-# I3 catalog migration status
+# I3 port status
 
-Existing design definitions imported from exact historical SHA 3db5871d43abd87fefbdadc21371beee59ac6b88:
-- 174 I3 S1–S3 *planned catalog entries*, not 174 measured entries; only the selected 72 configurations have engineering results on the three nodes.
-- S4 Context A and BC: six graphs, 28 positions, 40 D/I/S work item definitions, one connected Scale0 group.
-- All three nodes have reported S1–S4 40×3 engineering collections, but original file bytes are stored on experiment hosts; results summaries alone are not a replacement for P/R/GI source raw captures.
+`gpu_pre2.i3.isolated` provides the selected S1–S3 asset/worker/coordinator/report system. `gpu_pre2.i3.context` handles both frozen A and BC S4 plans through explicit plan hashes. Shared dispatch, taxonomy, runtime and profiling are imported once from this package.
 
-Run CPU-only structure audit:
-    python -m pip install -e .
-    python scripts/audit_i3_catalog.py
+The 174-entry catalog remains a design pool. Actual retained data is 72 isolated configs + 40 context work items per device: 3,024 cells, 120,960 measured across three devices. S4 Scale0 remains one connected context group.
 
-**Not yet ported / ready:** exact old I3 collection code and frozen input assets, producer-to-dataset converter, full Nsight/CUPTI parser and R-to-P alignment/quality replay. The catalog file itself has its original historical status field (including planned_only), which describes the design generation version, not current completion. Reported capture status lives in separate manifests.
+Offline replay covered all repeat2 P/R configurations on the three devices (672 traces). Of 36,992 artifacts, 36,902 were byte-exact. Ninety Groups4 predictor files preserve four distinct capture-local stream aliases instead of the historical flattened s0; all other fields agree. The exception still does not prove all-stream GI completion or strict reference.
 
-When porting the collector, avoid the original repeated source bundles i3_pilot/i3_config_pilot/i3_context_pilot and o4_pilot/vendor/legacy. Extract a common runtime and versioned protocol handlers, compare a saved trace's exact event/label/quality outputs against old code, then cut over. Do not claim bit-identical capture behavior before the regression.
+New collection uses `gpu_pre2:` protocol IDs and frozen source manifests, with no per-run full source copy or legacy bootstrap. No new GPU smoke was performed. Historical 3090 no-cuDNN and 4090 Groups4 variants retain their own evidence and limits; data replay does not qualify a new run of those variants.
+
+See LOCAL_DATA_LAYOUT.md for explicit dataset IDs, manifest/hash verification and collector entry points.

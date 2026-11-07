@@ -1,0 +1,44 @@
+[
+  {
+    "device": "GB10",
+    "profile_id": "96acf8f5b9cf7c95",
+    "profile_sha256": "5e3a0a641915701838fc6ecf590ac1f74b94ac1be79f5e02603fc45e569a9a99",
+    "checks": {
+      "torch": "match",
+      "cuda": "match",
+      "gpu_uuid": "unverified"
+    },
+    "status": "historical_profile",
+    "compatible": null,
+    "strict_reference_verified": false,
+    "recalibration_automatically_started": false
+  },
+  {
+    "device": "RTX3090",
+    "profile_id": "a1d523430210a243",
+    "profile_sha256": "addf7e819469ec4c38a20a3efc168a4e2fc94e8d35b24c4025dba4a71c148158",
+    "checks": {
+      "torch": "match",
+      "cuda": "match",
+      "gpu_uuid": "unverified"
+    },
+    "status": "historical_profile",
+    "compatible": null,
+    "strict_reference_verified": false,
+    "recalibration_automatically_started": false
+  },
+  {
+    "device": "RTX4090",
+    "profile_id": "91f4d18cabbcc556",
+    "profile_sha256": "e1683747e2614e2a9cae712f2b134979a245ac5ab1f49a5b1b7cd204fb77748d",
+    "checks": {
+      "torch": "mismatch",
+      "cuda": "mismatch",
+      "gpu_uuid": "unverified"
+    },
+    "status": "historical_profile",
+    "compatible": false,
+    "strict_reference_verified": false,
+    "recalibration_automatically_started": false
+  }
+]

@@ -1,71 +1,18 @@
 {
-  "schema": "gpu_pre2_external_assets_v1",
-  "status": "pending_sha_verification",
-  "datasets": [
-    {
-      "id": "E2",
-      "devices": [
-        "RTX4090",
-        "RTX3090",
-        "GB10"
-      ],
-      "required": [
-        "hardware_profile.json",
-        "curves.csv",
-        "microbench_samples.csv"
-      ]
-    },
-    {
-      "id": "I2_seven_A",
-      "devices": [
-        "RTX4090",
-        "RTX3090",
-        "GB10"
-      ],
-      "required": [
-        "frozen_assets",
-        "GI/P/R",
-        "reference_audit"
-      ]
-    },
-    {
-      "id": "I3_S1_S3",
-      "devices": [
-        "RTX4090",
-        "RTX3090",
-        "GB10"
-      ],
-      "required": [
-        "72_operator_configs",
-        "P/R captures",
-        "GI labels"
-      ]
-    },
-    {
-      "id": "I3_S4_scale0",
-      "devices": [
-        "RTX4090",
-        "RTX3090",
-        "GB10"
-      ],
-      "required": [
-        "shared_base_assets",
-        "local_native_derived_inputs",
-        "six_graph_D/I/S"
-      ]
-    },
-    {
-      "id": "I4_P0_P2",
-      "devices": [
-        "analysis_host"
-      ],
-      "required": [
-        "3 recognizer checkpoints",
-        "3 N0 checkpoints",
-        "normalizers",
-        "v2 frozen inputs",
-        "evaluation metrics"
-      ]
-    }
-  ]
+  "schema": "gpu_pre2_external_assets_v2",
+  "status": "local_assets_sha_verified_external_storage_required_on_other_hosts",
+  "registry": "DATASETS.json",
+  "external_index": "ASSET_INDEX.json",
+  "retained": [
+    "E2_three_devices",
+    "I2_seven_A_three_devices",
+    "I3_selected_S1_S4_three_devices",
+    "I4_P0_P2_six_checkpoints_and_v2"
+  ],
+  "missing_or_unverified": [
+    "RTX3090 isolated operand binaries/ASSETS not delivered independently",
+    "RTX4090 incomplete existing smoke delivery",
+    "current UUID/profile compatibility not fully verified"
+  ],
+  "strict_reference_verified": false
 }

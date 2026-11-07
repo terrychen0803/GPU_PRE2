@@ -3,7 +3,7 @@ from __future__ import annotations
 import statistics
 
 PROTOCOL = {
-    "protocol_id": "o4_seven_A_40x3_engineering_v2_20261106",
+    "protocol_id": "gpu_pre2:o4_seven_A_40x3_engineering_v2_20261106",
     "status": "new_seven_A_development_pilot_not_original_frozen_v2",
     "modes": ["GI", "P", "R"],
     "independent_process_repeats": 3,

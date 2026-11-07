@@ -1,0 +1,8 @@
+{
+  "removed_source_references": 21684,
+  "unique_inert_source_blobs": 226,
+  "source_bytes_before_allocated": 206934016,
+  "source_bytes_after_allocated": 2125824,
+  "all_source_bytes_sha256_verified": true,
+  "runtime_imports_from_blob_store": false
+}
