@@ -1,0 +1,116 @@
+{
+  "schema": "gpu_pre2_source_imports_v1",
+  "status": "source_files_indexed_only_raw_not_migrated",
+  "imports": [
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "b28144163e1ff08fc22913f5f05e75bdb561eea0",
+      "path": "e2_calibration/__init__.py",
+      "git_blob_sha": "41bea9b5c8818e966b8aafbd85a385352090d606",
+      "migration_kind": "exact_copy"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "b28144163e1ff08fc22913f5f05e75bdb561eea0",
+      "path": "e2_calibration/__main__.py",
+      "git_blob_sha": "25e749f3d32d2e59795a0c6fc06e085d60b31327",
+      "migration_kind": "exact_copy"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "b28144163e1ff08fc22913f5f05e75bdb561eea0",
+      "path": "e2_calibration/kernels.cu",
+      "git_blob_sha": "883f42216a694c83c72c3c16a9d1a1ddbe198a73",
+      "migration_kind": "exact_copy"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "b28144163e1ff08fc22913f5f05e75bdb561eea0",
+      "path": "e2_calibration/summarize.py",
+      "git_blob_sha": "8e51d0b2a97f65a60d1535200bf659e4ce6f6799",
+      "migration_kind": "exact_copy"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "b28144163e1ff08fc22913f5f05e75bdb561eea0",
+      "path": "e2_calibration/trace_smoke.py",
+      "git_blob_sha": "2b8abcf93da478a2be6188914d64c84a9ffda2a5",
+      "migration_kind": "exact_copy"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "b28144163e1ff08fc22913f5f05e75bdb561eea0",
+      "path": "o4_pilot/o4_research/adapters.py",
+      "git_blob_sha": "9ea9c145679512514d411b1a0e7d8c8e068736b6",
+      "migration_kind": "selective_extraction_may_be_modified"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "b28144163e1ff08fc22913f5f05e75bdb561eea0",
+      "path": "o4_pilot/o4_research/common.py",
+      "git_blob_sha": "d98f7e952a5542249327d27e9501a5e0e02d7288",
+      "migration_kind": "selective_extraction_may_be_modified"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "b28144163e1ff08fc22913f5f05e75bdb561eea0",
+      "path": "o4_pilot/o4_research/formal_worker.py",
+      "git_blob_sha": "6ffc1d2f29d9e834491593f14e644d76c7be04e5",
+      "migration_kind": "selective_extraction_may_be_modified"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "b28144163e1ff08fc22913f5f05e75bdb561eea0",
+      "path": "o4_pilot/o4_research/prepare_assets.py",
+      "git_blob_sha": "730d4ef4c42e6c23c7b315b9801e66202789ee80",
+      "migration_kind": "selective_extraction_may_be_modified"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "3db5871d43abd87fefbdadc21371beee59ac6b88",
+      "path": "docs/O4_WORKLOAD_MATRIX.md",
+      "git_blob_sha": "44c51024a16861ea9beb4dcac633609d40c13e02",
+      "migration_kind": "exact_configuration_copy"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "3db5871d43abd87fefbdadc21371beee59ac6b88",
+      "path": "docs/o4_i3_s3_lite_20261107/SPLIT_MANIFEST.json",
+      "git_blob_sha": "e2b99792576378aaef0cada4e0e1d9539dd366b8",
+      "migration_kind": "exact_configuration_copy"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "3db5871d43abd87fefbdadc21371beee59ac6b88",
+      "path": "docs/o4_i3_s4_scale0_20261107/SUMMARY.json",
+      "git_blob_sha": "4b8383e8dc94195f7df5d1d63930e5279878b278",
+      "migration_kind": "exact_configuration_copy"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "3db5871d43abd87fefbdadc21371beee59ac6b88",
+      "path": "i3_config_pilot/source/o4_i3_v2/CONFIGURATIONS.json",
+      "git_blob_sha": "c6524a19d8ac5f8700ba2d123c33a8f3adeb36d2",
+      "migration_kind": "exact_configuration_copy"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "3db5871d43abd87fefbdadc21371beee59ac6b88",
+      "path": "i3_context_pilot/source_A/o4_i3_context/PLAN.json",
+      "git_blob_sha": "289f1fd2d02fe82d440809cf13598d2ea28a2f0a",
+      "migration_kind": "exact_configuration_copy"
+    },
+    {
+      "upstream_repo": "terrychen0803/gpu-prediction",
+      "upstream_commit": "3db5871d43abd87fefbdadc21371beee59ac6b88",
+      "path": "i3_context_pilot/source_BC/o4_i3_context/PLAN.json",
+      "git_blob_sha": "ff4944a40d4dadceb2f1df66fc0f383ceaa8366d",
+      "migration_kind": "exact_configuration_copy"
+    }
+  ],
+  "limits": [
+    "Old local I4 weights/features not present",
+    "I2 worker imported source patched to remove E1/O1 references",
+    "I3 complete collector/parser source not ported"
+  ]
+}
