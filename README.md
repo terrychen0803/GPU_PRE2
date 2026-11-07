@@ -1,30 +1,56 @@
-# GPU_PRE2 — Cross-GPU Inference Runtime Prediction
+# GPU_PRE2 — RTX4090 → RTX3090 / GB10 Inference Runtime Prediction
 
-> **Research source:** RTX 4090 P-only profiling trace. **Targets:** RTX 3090 and NVIDIA GB10.
->
-> **Status:** clean-repository migration in progress. This repository deliberately does **not** import the complete historical `gpu-prediction` repository.
+Research objective: **predict the single-forward CUDA-event GPU elapsed time (GI)** on RTX3090 or GB10, using a **P-only profiling trace from RTX4090**. Six inference architectures: ResNet-50, MobileNetV3-Large, Swin-T, U-Net, YOLO26n, Qwen3-0.6B (separate prefill and one-step decode = seven workload groups).
 
-## Research objective
+The system identifies operator boundaries/classes in source P events; N0 estimates target GPU contextual operator spans; future I5 combines source execution structure and these estimates into target GI. An observed label is **one iteration of one complete scoped forward**, not the sum of 40 iterations, a CPU/host G0 interval, or total GPU kernel busy time.
 
-Given a fixed inference forward pass on RTX 4090, infer the operator boundaries/classes using only permitted numeric P-trace features; estimate target-GPU operator contextual spans via a calibrated cross-device predictor; then estimate the **single forward iteration** GPU event elapsed time (`GI`, `iteration_device_event_us`) on RTX 3090 or GB10.
+## Project status
 
-- Six inference model families: ResNet-50, MobileNetV3-Large, Swin-T, U-Net, YOLO26n, Qwen3-0.6B.
-- Seven inference groups: Qwen prefill and one-step decode are distinct.
-- GI measures one complete scoped forward, **not** a sum over 40 measured iterations, GPU busy union, or host G0.
-- Target test traces, target GI labels, reference-only boundaries/types/shapes must **never** enter source-only predictor inputs.
+**Research reconstruction / development branch**. This is a clean successor to the old gpu-prediction repository; it is not a copy of old branches or the O1/O2 research history. It contains E2 calibration, selected I2 forward adapters and worker, I3 catalogs/graph definitions, I4 experimental Semi-Markov/N0 model and a newly implemented grouped mixed-training trainer. The complete former I2/I3 capture orchestrators, Nsight R-to-P replay/acceptance logic, original I4 checkpoints and large raw captures **are not yet migrated/validated**. No new GPU experiments or actual new I4 fits were run in this repository.
 
-## Scope
+**Existing trace quality remains development-only** (strict_reference_verified=false). New code is NOT numerically guaranteed equivalent to old frozen O3/I4 checkpoints.
 
-Keep only **E2** hardware calibration, essential **O3** Semi-Markov + N0 method, **I2** task-scoped forward measurement, **I3** isolated S1–S3 and contextual S4, and selectively the frozen **I4** exploratory model/pipeline baseline. The legacy O1/O2 and unrelated experiment history are *not* part of the new research pipeline.
+## Modules
 
-### I4 learning design
+| Component | Location | Status |
+|---|---|---|
+| E2 hardware microbenchmarks | e2_calibration/ | Exact executable source extracted from fixed old commit; 3-GPU profiles stored externally |
+| I2 7-A workloads | src/gpu_pre2/i2/ | Seven model adapters, asset prep, single-process GI/P/R worker extracted; capture coordinator/parser still pending |
+| I3 S1–S3 | configs/operators/; src/gpu_pre2/i3/ | Frozen 174-entry **design pool**; 72 selected configurations actually measured per node, subject to per-node quality |
+| I3 S4 | configs/contexts/ | Six scale0 D/I/S graph definitions and engineering summaries; one context group |
+| I4 recognition | src/gpu_pre2/models/semimarkov.py | Differentiable L8 Semi-Markov score, partition, structured loss, Viterbi |
+| I4 training | src/gpu_pre2/models/train_mixed.py | Isolated-only, context-only, pretrain→context, pretrain→mixed; group-balanced, train-only normalizer |
+| I4 N0 | src/gpu_pre2/models/n0.py | 43→64→32→1 time-ratio model; historical weights NOT imported |
+| I4 results | results/i4/ | Historical P0–P2 exploratory summary, not reproduced |
+| I5 | docs/DATA_CONTRACT.md | GI target contract only; ITER predictor not implemented |
 
-1. Isolated pretraining: S1–S3 single-operator P traces, trained with structured Semi-Markov loss.
-2. Mixed structured training: initialize from isolated model; draw grouped samples from **S1–S3 and S4 D/I**, preserving both isolated classification and multi-operator boundary supervision.
-3. Evaluate against isolated-only, context-only, and context-only fine-tuning on separate signature/graph groups.
-4. Train N0 CTX cross-GPU time model with source P-only features and train-only target P-CTX labels; separately evaluate isolated and mixed-context variants.
-5. Use independent held-out contexts and task-derived real-forward coverage; **never split iterations/repeats of the same configuration across evaluation groups**.
+The old O3 Semi-Markov/N0 principles are absorbed into the I4 module, not carried forward as a separate historical experiment tree. Old O1/O2 raw datasets and vendor/legacy copies are intentionally excluded.
 
-**Data status:** raw Nsight reports, SQLite captures, frozen input/weights and most learned checkpoints live on experiment hosts, not in the historical Git repository. Their migration is not assumed until manifest/SHA validation. Existing trace quality is engineering/development-only, `strict_reference_verified=false`.
+## I4 mixed structured learning
 
-See `docs/` for migration status and the new data contract. This initial commit is only the repository bootstrap.
+1. **Pretrain on isolated S1–S3**: one gold operator per source P sequence; learn local operator class, event structure and within-operator grouping.
+2. **Continue with mixed S1–S3 + S4 D/I**: a shared Semi-Markov recognizer learns *not merging neighboring operators*, while retaining isolated supervision. Group-balanced sampling prevents the 40 iterations × 3 process repeats from masquerading as independent training examples.
+3. **Evaluate independently** on different connected signature/context graph groups; compare 4 learning strategies. R true boundaries/classes are training/evaluator-only, never predictor features.
+4. **N0** is a separate source P-feature → target P CTX regression head; CTX and GI have different timing semantics.
+
+Existing S4 Scale0 constitutes only **one connected context group**, so mixed learning can be a development exercise, **not yet an independently validated context generalization result**. Missing Hardswish/Hardsigmoid/Mul/Softmax and Memset event geometry need appropriate feature/taxonomy/data treatment. The new candidate aggregator is mean-pooling and is **not checkpoint-identical** to historical I4 E1 scoring.
+
+## Quickstart (CPU development)
+
+    python -m pip install -e .
+    python -m unittest discover -s tests -v
+    python scripts/audit_i3_catalog.py
+
+Train only after a verified local dataset converter has exported the JSONL contract:
+
+    python scripts/train_i4.py --train /data/i4/train.jsonl --validation /data/i4/val.jsonl --mode pretrain_mixed --seed 17 --out /data/i4/fits/mixed_17
+
+No GPU data collection or target-trace access occurs in that CLI. See docs/I4_MIXED_TRAINING.md.
+
+## Data storage
+
+- Git: executable source, experiment definitions, small provenance summaries, reports and tests.
+- **Outside Git**: NSys .nsys-rep/SQLite raw, frozen weights/tensors, E2 actual profile runs, old I4 trained checkpoints, new fit output. These require validated SHA256 mapping before being called migrated.
+- data/manifests/EXTERNAL_ASSETS_REQUIRED.json tracks absent artifacts. No imaginary completed transfers.
+
+Read docs/MIGRATION_STATUS.md, docs/TASK_COVERAGE.md, docs/DATA_CONTRACT.md, docs/I2_PORT_STATUS.md and docs/I3_PORT_STATUS.md first.
